@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NEWAPP" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MpR-x7-ED2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="222"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="222" id="fsM-fF-BPm"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="IOS 808 APP 8.png"/>
+                                <connections>
+                                    <action selector="PLAY_CP1:" destination="BYZ-38-t0r" eventType="touchDown" id="mQC-OG-PcM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aux-aX-tl4">
+                                <rect key="frame" x="0.0" y="222" width="375" height="222"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="IOS 808 APP 0.png"/>
+                                <connections>
+                                    <action selector="PLAY_SD1:" destination="BYZ-38-t0r" eventType="touchDown" id="Wgg-5V-VNC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yE0-4E-ihZ">
+                                <rect key="frame" x="0.0" y="444" width="375" height="222"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="IOS 808 APP 8.png"/>
+                                <connections>
+                                    <action selector="PLAY_BD1:" destination="BYZ-38-t0r" eventType="touchDown" id="P9E-u5-iji"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="MpR-x7-ED2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3IR-Ng-lfU"/>
+                            <constraint firstItem="aux-aX-tl4" firstAttribute="height" secondItem="MpR-x7-ED2" secondAttribute="height" id="4jp-G7-Ana"/>
+                            <constraint firstItem="yE0-4E-ihZ" firstAttribute="height" secondItem="MpR-x7-ED2" secondAttribute="height" id="CVO-XG-7A0"/>
+                            <constraint firstItem="yE0-4E-ihZ" firstAttribute="top" secondItem="aux-aX-tl4" secondAttribute="bottom" id="ITO-3D-8N1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yE0-4E-ihZ" secondAttribute="bottom" constant="1" id="LRS-YK-gTg"/>
+                            <constraint firstItem="MpR-x7-ED2" firstAttribute="trailing" secondItem="aux-aX-tl4" secondAttribute="trailing" id="LoD-St-uTl"/>
+                            <constraint firstItem="MpR-x7-ED2" firstAttribute="leading" secondItem="aux-aX-tl4" secondAttribute="leading" id="QRa-u8-IOS"/>
+                            <constraint firstItem="aux-aX-tl4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Tzy-YT-Ga6"/>
+                            <constraint firstItem="aux-aX-tl4" firstAttribute="trailing" secondItem="yE0-4E-ihZ" secondAttribute="trailing" id="ZDK-Jh-FcH"/>
+                            <constraint firstItem="aux-aX-tl4" firstAttribute="leading" secondItem="yE0-4E-ihZ" secondAttribute="leading" id="aDI-9R-Mtp"/>
+                            <constraint firstAttribute="trailing" secondItem="MpR-x7-ED2" secondAttribute="trailing" id="aUi-8v-xYT"/>
+                            <constraint firstItem="MpR-x7-ED2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="h7k-cj-8MM"/>
+                            <constraint firstItem="aux-aX-tl4" firstAttribute="top" secondItem="MpR-x7-ED2" secondAttribute="bottom" id="rOR-tb-mfb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="ECf-X2-XxF">
+                    <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </switch>
+            </objects>
+            <point key="canvasLocation" x="-18.399999999999999" y="-46.326836581709152"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IOS 808 APP 0.png" width="750" height="444"/>
+        <image name="IOS 808 APP 8.png" width="750" height="444"/>
+    </resources>
+</document>
