@@ -1,10 +1,5 @@
 //
 //  SOUND_PLAYER_CLASS.swift
-//  NEWAPP
-//
-//  Created by GOD on 3/6/17.
-//  Copyright © 2017 ALL ONE SUN. All rights reserved.
-//
 
 import Foundation
 import AVFoundation
